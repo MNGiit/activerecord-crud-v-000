@@ -110,5 +110,8 @@ def can_destroy_all_items_at_once
     Movie.create(title: "Movie_#{i}")
   end
   #Movie.all.delete # Doesn't work
-  Movie.delete
+  #Movie.delete # Doesn't work
+  Movie.all.each do |movie|
+    movie.delete
+  end
 end
