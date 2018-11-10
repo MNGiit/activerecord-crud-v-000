@@ -51,6 +51,8 @@ end
 
 def can_find_the_first_item_from_the_database_using_id
   Movie.find_by(id:1)
+  #id doesn't start at 0 D'oh!
+  #remember that it can search other attributes like title by doing Movie.find_by(title:"3:10 to Yuma")
 end
 
 def can_find_by_multiple_attributes
